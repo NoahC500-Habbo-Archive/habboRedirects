@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <head>
-    <title>NET.libreDucks.habboRedirects</title>
+	<title>NET.libreDucks.habboRedirects</title>
 </head>
 <body>
-    <h1>Loading…</h1>
-    <script>
-        let x = new URLSearchParams(window.location.search);
-        if (x.get("redirect") == "imgur") {
-            window.location.replace("https://imgur.com/")
-        } else if (x.get("redirect") == "gdrive") {
-            window.location.replace("https://drive.google.com/")
-        } else if (x.get("redirect") == "onedrive") {
-            window.location.replace("https://onedrive.live.com/")
-        } else if (x.get("redirect") == "cal") {
-            window.location.replace("https://calendar.google.com/")
-        } else {
-            document.getElementsByTagName("h1")[0].outerHTML = "<h1>Failed to load</h1><p>Check <code>?redirect</code> is set correctly.</p><p>Example values include \"imgur\" and \"gdrive\"."
-        }
-    </script>
+	<h1>Loading…</h1>
+	<script>
+		let x = new URLSearchParams(window.location.search);
+		if (x.get("redirect") == "imgur") {
+			window.location.replace("https://imgur.com/")
+		} else if (x.get("redirect") == "gdrive") {
+			window.location.replace("https://drive.google.com/")
+		} else if (x.get("redirect") == "onedrive") {
+			window.location.replace("https://onedrive.live.com/")
+		} else if (x.get("redirect") == "cal") {
+			window.location.replace("https://calendar.google.com/")
+		} else {
+			document.getElementsByTagName("h1")[0].outerHTML = "<h1>Failed to load</h1><p>Check <code>?redirect</code> is set correctly.</p><p>Example values include \"imgur\" and \"gdrive\"."
+		}
+	</script>
 </body>
